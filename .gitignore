@@ -1,0 +1,18 @@
+# Python
+backend/.venv/
+backend/.pytest_cache/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+.env
+
+# Node
+frontend/node_modules/
+frontend/.next/
+frontend/.turbo/
+
+# OS
+.DS_Store
+Thumbs.db
