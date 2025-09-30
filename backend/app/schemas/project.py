@@ -1,0 +1,21 @@
+from datetime import datetime
+from typing import Optional
+
+from pydantic import BaseModel
+
+
+class ProjectBase(BaseModel):
+    name: str
+    goals: Optional[str] = None
+
+
+class ProjectCreate(ProjectBase):
+    owner_id: int
+
+
+class ProjectRead(ProjectBase):
+    id: int
+    created_at: datetime
+
+    class Config:
+        orm_mode = True
